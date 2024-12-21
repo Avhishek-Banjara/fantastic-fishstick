@@ -53,6 +53,107 @@
       
 
     }
+
+    .features {
+  padding: 20px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 20px; 
+ }
+
+    .why-choose {
+      padding: 30px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .feature-item {
+      padding: 15px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px black(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature-item i {
+      color: blue;
+      margin-bottom: 10px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      color: white;
+      background-color: blue;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      background-color: blue;
+    }
+
+
+    .footer {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  text-align: left;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: blue;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+
+   
     
 
  
@@ -102,17 +203,185 @@
 
   <div class="features">
     <h2>Which AirPods are right for you?</h2>
-    <img src="C:\Users\Aagaman\Downloads\4.jpg" >
-    
-    <img src="C:\Users\Aagaman\Downloads\2.jpg" > 
-    
-    <img src="C:\Users\Aagaman\Downloads\tt.webp" width="20%">
+     <div class="image-container">
+      
+        <img src="C:\Users\Aagaman\Downloads\4.jpg">
+        <p>Airpods 4</p>
+      
+
+      
+        <img src="C:\Users\Aagaman\Downloads\2.jpg">
+        <p>AirPod 2</p>
+      
+
      
+        <img src="C:\Users\Aagaman\Downloads\tt.webp"  width="20%">
+        <p>AirPod Pro</p>
+      
+   </div>
+
+  <div class="why-choose">
+    <h2>Why Choose AirPods?</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <i class="fa-solid fa-music fa-2x"></i>
+        <h3>Immersive Sound</h3>
+        <p>Experience high-quality audio with Active Noise Cancellation and Spatial Audio.</p>
+      </div>
+
+      <div class="feature-item">
+        <i class="fa-solid fa-battery-full fa-2x"></i>
+        <h3>Long Battery Life</h3>
+        <p>Enjoy up to 24 hours of listening time with the charging case.</p>
+      </div>
+
+      <div class="feature-item">
+        <i class="fa-solid fa-wifi fa-2x"></i>
+        <h3>Seamless Connectivity</h3>
+        <p>Effortlessly connect to all your Apple devices with one tap.</p>
+      </div>
+
+      <div class="feature-item">
+        <i class="fa-solid fa-shield-alt fa-2x"></i>
+        <h3>Secure Fit</h3>
+        <p>Designed for comfort and a secure fit, perfect for any activity.</p>
+      </div>
+    </div>
+    <a href="#" class="cta-button">Shop AirPods Now</a>
   </div>
 
+  
 
-  <footer>
-    Copyright © 2024 Apple Inc. All rights reserved.     Privacy Policy  |  Terms of Use  |  Sales and Refunds   |   Legal | Site Map
+
+  <footer class="footer">
+    <div class="footer-content">
+     
+      <div class="footer-section">
+        <h4>Shop and Learn</h4>
+        <ul>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Vision</a></li>
+
+        </ul>
+      </div>
+  
+    
+      <div class="footer-section">
+        <h4>Wallet & Payments</h4>
+        <ul>
+          <li><a href="#">Apple Wallet</a></li>
+          <li><a href="#">Apple Card</a></li>
+         
+        </ul>
+      </div>
+  
+     
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="#">Manage Your Apple Account</a></li>
+          <li><a href="#">Apple Store Account</a></li>
+          <li><a href="#">iCloud.com</a></li>
+        </ul>
+      </div>
+  
+      
+      <div class="footer-section">
+        <h4>Entertainment</h4>
+        <ul>
+          <li><a href="#">Apple One</a></li>
+          <li><a href="#">Apple TV+</a></li>
+          <li><a href="#">Apple Music</a></li>
+          <li><a href="#">Apple Arcade</a></li>
+          <li><a href="#">Apple Fitness+</a></li>
+
+        </ul>
+      </div>
+  
+      
+      <div class="footer-section">
+        <h4>Apple Store</h4>
+        <ul>
+          <li><a href="#">Find a Store</a></li>
+          <li><a href="#">Genius Bar</a></li>
+          <li><a href="#">Today at Apple</a></li>
+          <li><a href="#">Group Reservations</a></li>
+          <li><a href="#">Apple Camp</a></li>
+          <li><a href="#">Apple Store App</a></li>
+          <li><a href="#">Certified Refurbished</a></li>
+
+        </ul>
+      </div>
+  
+      
+      <div class="footer-section">
+        <h4>For Business</h4>
+        <ul>
+          <li><a href="#">Apple and Business</a></li>
+          <li><a href="#">Shop for Business</a></li>
+        </ul>
+      </div>
+  
+     
+      <div class="footer-section">
+        <h4>For Education</h4>
+        <ul>
+          <li><a href="#">Apple and Education</a></li>
+          <li><a href="#">Shop for K-12</a></li>
+          <li><a href="#">Shop for College</a></li>
+        </ul>
+      </div>
+  
+   
+      <div class="footer-section">
+        <h4>For Healthcare</h4>
+        <ul>
+          <li><a href="#">Apple in Healthcare</a></li>
+          <li><a href="#">Mac in Healthcare</a></li>
+          <li><a href="#">Health on Apple Watch</a></li>
+          <li><a href="#">Health Records on iPhone and iPad</a></li>
+        </ul>
+      </div>
+  
+     
+      <div class="footer-section">
+        <h4>For Government</h4>
+        <ul>
+          <li><a href="#">Shop for Government</a></li>
+          <li><a href="#">Shop for Veterans and Military</a></li>
+        </ul>
+      </div>
+  
+      
+      <div class="footer-section">
+        <h4>Apple Values</h4>
+        <ul>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Environment</a></li>
+          <li><a href="#">Inclusion and Diversity</a></li>
+          <li><a href="#">Privacy</a></li>
+
+        </ul>
+      </div>
+  
+     
+      <div class="footer-section">
+        <h4>About Apple</h4>
+        <ul>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Apple Leadership</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Ethics & Compliance</a></li>
+           <li><a href="#">Contact Apple</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
+  
+  
 </body>
 </html>
